@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VaultChat</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat" id="chat-left">
+      <div class="messages" id="messages-left"></div>
+      <input type="text" id="input-left" placeholder="Type a message...">
+      <button onclick="sendMessage('left')">Send</button>
+    </div>
+    <img class="arrow" src="/img/arrow.jpg" alt="End-to-End Encrypted" title="End-to-End Encrypted" width="50" height="60">
+    <div class="chat" id="chat-right">
+      <div class="messages" id="messages-right"></div>
+      <input type="text" id="input-right" placeholder="Type a message...">
+      <button onclick="sendMessage('right')">Send</button>
+    </div>
+  </div>
+  <script src="/js/script.js" type="module"></script>
+</body>
+</html>
