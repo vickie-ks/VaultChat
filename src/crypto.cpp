@@ -43,7 +43,6 @@ std::vector<int> NTRUCrypto::encrypt(const std::vector<int>& message, const std:
 }
 
 std::vector<int> NTRUCrypto::decrypt(const std::vector<int>& encryptedMessage) {
-    std::cout << encryptedMessage << std::endl;
     std::vector<int> a = polynomialMult(f, encryptedMessage, q);
     std::vector<int> message(N);
     for (int i = 0; i < N; ++i) {
